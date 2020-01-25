@@ -102,5 +102,7 @@ print("--------------")
 print(f"THERE ARE {len(unique_departments)} DEPARTMENTS:")
 print("--------------")
 
+unique_departments.sort()
+
 for d in unique_departments:
     print(d.title())
