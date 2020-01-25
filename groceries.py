@@ -38,7 +38,15 @@ print("--------------")
 print(f"THERE ARE {len(products)} PRODUCTS:")
 print("--------------")
 
-for product in products:
+
+def sort_by_name(product):
+    return product["name"]
+
+sorted_products = sorted(products, key=sort_by_name)
+
+
+
+for product in sorted_products:
     price_usd = " (${0:.2f})".format(product["price"])
     print(" ... " + product["name"] + price_usd)
 
