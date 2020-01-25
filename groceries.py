@@ -92,12 +92,15 @@ for product in sorted_products:
 departments = []
 for product in products:
     # print(product["department"])
-    if product["department"] not in departments:
-         departments.append(product["department"])
+    #if product["department"] not in departments:
+    #     departments.append(product["department"])
+    departments.append(product["department"])
+
+unique_departments = list(set(departments))
 
 print("--------------")
-print(f"THERE ARE {len(departments)} DEPARTMENTS:")
+print(f"THERE ARE {len(unique_departments)} DEPARTMENTS:")
 print("--------------")
 
-for d in departments:
-    print(d)
+for d in unique_departments:
+    print(d.title())
