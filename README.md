@@ -5,7 +5,6 @@ An exercise in building a Python application, completed for class.
 ## Prerequisites
     + Anaconda 3.7
     + Python 3.7
-    + Pip
 
 # Installation
 
